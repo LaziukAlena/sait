@@ -55,6 +55,9 @@ input {
   width: 130rem;
   margin: 0 auto;
 }
+:root {
+  --text-size-medium: 1.6rem;
+}
 
 .button {
   border-radius: 5rem;
@@ -88,10 +91,7 @@ input {
 }
 
 .header__nav a {
-  font-size: 1.6rem;
-
-  font-weight: 400;
-
+  font-size: var(--text-size-medium);
   line-height: 150%;
 }
 
@@ -104,7 +104,7 @@ input {
 .header__button {
   margin-left: 55.3rem;
   background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
 
   line-height: 150%;
 }
@@ -141,7 +141,7 @@ input {
 
 .main-display__button {
   background: linear-gradient(141deg, #df5950 0%, #451046 100%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
 
   line-height: 150%;
 }
@@ -168,7 +168,7 @@ input {
 
 .timer__text {
   opacity: 0.4;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
 
   line-height: 140%;
 }
@@ -202,7 +202,7 @@ input {
 
 .work__description {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
 }
 
@@ -211,9 +211,14 @@ input {
   position: relative;
 }
 
+.process .process__img {
+  transform: rotate(45deg);
+}
+
 .process__img {
   width: 9rem;
   height: 4.5rem;
+  margin-right: 2rem;
 }
 
 .process__title {
@@ -229,7 +234,7 @@ input {
 
 .process-description {
   opacity: 0.5;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
   max-width: 41.1rem;
   margin-bottom: 8rem;
@@ -266,4 +271,113 @@ input {
   font-size: 1.4rem;
   line-height: 160%;
   opacity: 0.5;
+}
+
+.command {
+  padding-bottom: 20rem;
+}
+
+.command__title {
+  margin-bottom: 11.9rem;
+}
+
+.command__header {
+  margin-bottom: 0;
+}
+
+.command__wrap {
+  justify-content: space-between;
+  display: flex;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.command__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.command__img {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+
+.command__name {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 140%;
+  margin-bottom: 1.5rem;
+}
+
+.command__professional {
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  margin-bottom: 3rem;
+}
+
+.command__link {
+  font-weight: 500;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  margin-bottom: 3rem;
+  border: 0.1rem solid #ffffff;
+}
+
+.assembly {
+  padding-bottom: 24.4rem;
+}
+
+.assembly-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.assembly__header {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+  margin-bottom: 3rem;
+}
+
+.assembly-description {
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  margin-bottom: 4.5rem;
+}
+
+.assembly__button {
+  margin-bottom: 5.08rem;
+  font-weight: 700;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  background: linear-gradient(141deg, #df5950 0%, #451046 100%);
+}
+
+.assembly__social {
+  display: flex;
+}
+
+.assembly__item {
+  border-radius: 50%;
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assembly__item img {
+  width: 50%;
+  height: 50%;
+}
+
+.assembly__item:not(:last-child) {
+  margin-right: 3rem;
 }
